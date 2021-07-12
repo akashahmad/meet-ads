@@ -1,0 +1,6 @@
+@import "./colors.css";
+@import "./width-height.css";
+
+.opacity_8 {
+  opacity: 0.8;
+}

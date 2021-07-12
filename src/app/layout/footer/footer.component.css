@@ -1,0 +1,9 @@
+.footer_container{
+  background: url("../../../assets/images/Path74543@3x.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer_container .section2_hr{
+    height: 1px;
+    background: #707070;
+}

@@ -1,0 +1,32 @@
+.prices_container .section2_container .common_box button{
+    border-radius: 5px;
+    border: solid 2px #fbbf24;
+    background-color: #fff;
+} 
+.prices_container .section2_container .common_box .hr_line{
+    border-radius: 5px;
+    height: 1px;
+    background-color: #707070;
+} 
+.prices_container .section2_container .common_box:hover .hr_line{
+    background-color: #fff;
+} 
+.prices_container .section2_container .common_box:hover{
+    background: #ffcd4a;
+}
+.prices_container .section2_container .common_box:hover button {
+    border: solid 2px #ffffff;
+    background-color: #ffcd4a;
+} 
+.prices_container .section2_container .common_box .goldenPlus , .prices_container .section2_container .common_box .whitePlus{
+    margin: -4px 0px 0px 3px;    
+}
+.prices_container .section2_container .common_box:hover .goldenPlus{
+    display: none;
+} 
+.prices_container .section2_container .common_box:hover .whitePlus{
+    display: block;
+} 
+.prices_container .section2_container .common_box .whitePlus{
+    display: none;
+} 

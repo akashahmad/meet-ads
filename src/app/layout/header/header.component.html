@@ -1,0 +1,97 @@
+<div class="header_container bg_gray1">
+  <div
+    class="w-full flex justify-between items-center container mx-auto py-3 px-2"
+  >
+    <!-- left side -->
+    <div class="w-3/12">
+      <img src="../../../assets/images/logo2.png" alt="logo" class="h_80px" />
+    </div>
+    <!-- right side -->
+    <div class="w-6/12 right_side_container">
+      <div class="hidden lg:block xl:block">
+        <ul
+          class="
+            flex
+            justify-between
+            w-full
+            list-none
+            text_darkblue
+            items-center
+            font-medium
+          "
+        >
+          <li
+            class="cursor-pointer hover:text-yellow-400 px-1"
+            [ngClass]="activeLink === 'home' ? 'text-yellow-400' : ''"
+          >
+            <a href="/">Home</a>
+          </li>
+          <li
+            class="cursor-pointer hover:text-yellow-400 px-1"
+            [ngClass]="activeLink === 'services' ? 'text-yellow-400' : ''"
+          >
+            <a href="/services">Services</a>
+          </li>
+          <li
+            class="cursor-pointer hover:text-yellow-400 px-1"
+            [ngClass]="activeLink === 'pricing' ? 'text-yellow-400' : ''"
+          >
+            <a href="/pricing">Pricing</a>
+          </li>
+          <li class="cursor-pointer hover:text-yellow-400 px-1">About us</li>
+          <li class="px-1">
+            <button
+              class="
+                border-2 border-gray-400
+                hover:border hover:bg-gray-200
+                cursor-pointer
+                rounded
+                px-3
+                py-2
+              "
+            >
+              Platform Login
+            </button>
+          </li>
+          <li class="px-1">
+            <button
+              class="
+                border-2 border-black
+                bg_darkblue
+                rounded
+                cursor-pointer
+                text-yellow-400
+                px-3
+                py-2
+                h-full
+              "
+            >
+              Get Started
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div class="block lg:hidden xl:hidden">
+        <div class="w-full flex justify-end px-2">
+          <span style="font-size: 30px; cursor: pointer" (click)="openNav()"
+            >&#9776;</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- reponsive navigation -->
+  <div class="reponsive_container">
+    <div class="sidenav" *ngIf="mySidenav">
+      <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"
+        >&times;</a
+      >
+      <a href="/">Home</a>
+      <a href="/services">Services</a>
+      <a href="/pricing">Pricing</a>
+      <a href="#">About Us</a>
+      <a href="#">Platform Login</a>
+      <a href="#">Get Started</a>
+    </div>
+  </div>
+</div>
