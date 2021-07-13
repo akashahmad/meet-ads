@@ -5,7 +5,7 @@ import { ServicesComponent } from './pages/services/services.component';
 import { PricingComponent } from './pages/pricing/pricing.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent , },
   { path: 'services', component: ServicesComponent },
   { path: 'pricing', component: PricingComponent },
 ];

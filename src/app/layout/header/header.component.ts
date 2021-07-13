@@ -7,19 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   mySidenav: boolean = false;
-  activeLink:string = "home"
   constructor() {
-    if(window.location.pathname === "/"){
-      this.activeLink ="home"
-    }
-    if(window.location.pathname === "/services"){
-      this.activeLink ="services"
-    }
-    if(window.location.pathname === "/pricing"){
-      this.activeLink ="pricing"
-    }
   }
-  ngOnInit(): void {}
+  ngOnInit(): void {
+  }
   closeNav() {
     this.mySidenav = false;
   }

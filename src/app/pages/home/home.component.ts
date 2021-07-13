@@ -9,7 +9,7 @@ import * as AOS from 'aos';
 export class HomeComponent implements OnInit {
   show = false;
   title = 'angularTests';
-  list = ['This is going to be text as MeetAds punchline.'];
+  list = ['This Is Going To Be Text As MeetAds Punchline.'];
   constructor() {}
   ngOnInit(): void {
     AOS.init({ once: true });

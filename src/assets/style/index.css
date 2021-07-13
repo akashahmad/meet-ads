@@ -4,3 +4,19 @@
 .opacity_8 {
   opacity: 0.8;
 }
+
+/* common line_height */
+.line_height_50 {
+  line-height: 50px!important;
+}
+.line_height_25 {
+  line-height: 25px!important;
+}
+.line_height_28 {
+  line-height: 28px!important;
+}
+
+/* font size */
+.f_38 {
+  font-size: 38px;
+}

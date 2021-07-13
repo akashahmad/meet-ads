@@ -20,55 +20,57 @@
             font-medium
           "
         >
-          <li
-            class="cursor-pointer hover:text-yellow-400 px-1"
-            [ngClass]="activeLink === 'home' ? 'text-yellow-400' : ''"
-          >
-            <a href="/">Home</a>
+          <li class="cursor-pointer hover:text-yellow-400 px-1">
+            <a
+              [routerLink]="['/']"
+              routerLinkActive="text-yellow-400"
+              [routerLinkActiveOptions]="{ exact: true }"
+              >Home</a
+            >
           </li>
-          <li
-            class="cursor-pointer hover:text-yellow-400 px-1"
-            [ngClass]="activeLink === 'services' ? 'text-yellow-400' : ''"
-          >
-            <a href="/services">Services</a>
+          <li class="cursor-pointer hover:text-yellow-400 px-1">
+            <a routerLink="/services" routerLinkActive="text-yellow-400"
+              >Services</a
+            >
           </li>
-          <li
-            class="cursor-pointer hover:text-yellow-400 px-1"
-            [ngClass]="activeLink === 'pricing' ? 'text-yellow-400' : ''"
-          >
-            <a href="/pricing">Pricing</a>
+          <li class="cursor-pointer hover:text-yellow-400 px-1">
+            <a routerLink="/pricing" routerLinkActive="text-yellow-400"
+              >Pricing</a
+            >
           </li>
           <li class="cursor-pointer hover:text-yellow-400 px-1">About us</li>
-          <li class="px-1">
-            <button
-              class="
-                border-2 border-gray-400
-                hover:border hover:bg-gray-200
-                cursor-pointer
-                rounded
-                px-3
-                py-2
-              "
-            >
-              Platform Login
-            </button>
-          </li>
-          <li class="px-1">
-            <button
-              class="
-                border-2 border-black
-                bg_darkblue
-                rounded
-                cursor-pointer
-                text-yellow-400
-                px-3
-                py-2
-                h-full
-              "
-            >
-              Get Started
-            </button>
-          </li>
+          <ul class="list-none flex items-center">
+            <li class="px-1">
+              <button
+                class="
+                  border-2 border-gray-400
+                  hover:border hover:bg-gray-200
+                  cursor-pointer
+                  rounded
+                  px-3
+                  py-2
+                "
+              >
+                Platform Login
+              </button>
+            </li>
+            <li class="px-1">
+              <button
+                class="
+                  border-2 border-black
+                  bg_darkblue
+                  rounded
+                  cursor-pointer
+                  text-yellow-400
+                  px-3
+                  py-2
+                  h-full
+                "
+              >
+                Get Started
+              </button>
+            </li>
+          </ul>
         </ul>
       </div>
       <div class="block lg:hidden xl:hidden">
@@ -86,9 +88,9 @@
       <a href="javascript:void(0)" class="closebtn" (click)="closeNav()"
         >&times;</a
       >
-      <a href="/">Home</a>
-      <a href="/services">Services</a>
-      <a href="/pricing">Pricing</a>
+      <a routerLink="/">Home</a>
+      <a routerLink="/services">Services</a>
+      <a routerLink="/pricing">Pricing</a>
       <a href="#">About Us</a>
       <a href="#">Platform Login</a>
       <a href="#">Get Started</a>
