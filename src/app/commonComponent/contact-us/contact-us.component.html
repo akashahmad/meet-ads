@@ -292,16 +292,26 @@
               w-full
               flex
               items-center
+              justify-around
               border border-yellow-500
               hover:bg-yellow-500 hover:text-white
               text-yellow-500
               px-4
               py-2
               rounded
+              text-center
             "
           >
-            <img src="../../../assets/images/phone.png" alt="" class="h_14px" />
-            <span class="px-3">12334345346</span>
+            <span
+              routerLink="/"
+              routerLinkActive="hidden"
+              [routerLinkActiveOptions]="{ exact: true }"
+              ><img
+                src="../../../assets/images/phone.png"
+                alt=""
+                class="h_14px"
+            /></span>
+            <span class="pl-4">12334345346</span>
           </button>
         </div>
         <div
@@ -326,6 +336,7 @@
               px-4
               py-2
               rounded
+              text_darkblue2
             "
           >
             <img
