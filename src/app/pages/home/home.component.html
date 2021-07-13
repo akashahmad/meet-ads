@@ -27,7 +27,7 @@
                 xl:text-left
               "
             >
-            <ngtypewriter [StringList]='list' [speed]='3000'></ngtypewriter>
+              <ngtypewriter [StringList]="list" [speed]="3000"></ngtypewriter>
             </h3>
             <p
               data-aos="fade-up"
@@ -133,9 +133,10 @@
           pt-12
           pb-8
         "
+        data-aos="fade-up"
       >
         <!-- box1 -->
-        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5" data-aos="fade-up">
+        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5">
           <div class="w-full py-5 px-2 cursor-pointer">
             <!-- img -->
             <div class="flex justify-start">
@@ -201,7 +202,7 @@
           </div>
         </div>
         <!-- box2 -->
-        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5" data-aos="fade-up">
+        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5">
           <div class="w-full py-5 px-2 cursor-pointer">
             <!-- img -->
             <div class="flex justify-start">
@@ -267,7 +268,7 @@
           </div>
         </div>
         <!-- box3 -->
-        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5" data-aos="fade-up">
+        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5">
           <div class="w-full py-5 px-2 cursor-pointer">
             <!-- img -->
             <div class="flex justify-start">
@@ -353,20 +354,31 @@
         </div>
       </div>
       <!-- content -->
-      <div class="flex flex-col lg:flex-row xl:flex-row justify-around py-8">
+      <div
+        class="flex flex-col lg:flex-row xl:flex-row justify-around py-8"
+        data-aos="fade-left"
+      >
         <!-- left side -->
-        <div
-          class="w-full flex justify-center lg:w-5/12 xl:w-5/12 py-2"
-          data-aos="fade-left"
-        >
-          <img src="../../../assets/images/NoPath.png" alt="" class="w-full" />
+        <div class="w-full flex justify-center lg:w-5/12 xl:w-5/12 py-2">
+          <div>
+            <img
+              src="../../../assets/images/NoPath.png"
+              alt=""
+              class="w-full"
+            />
+          </div>
         </div>
         <!-- right side -->
         <div
           class="w-full flex justify-center lg:w-5/12 xl:w-5/12 py-2"
-          data-aos="fade-right"
         >
-          <img src="../../../assets/images/NoPath.png" alt="" class="w-full" />
+          <div>
+            <img
+              src="../../../assets/images/NoPath.png"
+              alt=""
+              class="w-full"
+            />
+          </div>
         </div>
       </div>
       <div class="flex justify-center pt-3">
@@ -580,7 +592,9 @@
   <div class="bg-white py-5 px-3 section6_container">
     <div class="container mx-auto">
       <div data-aos="zoom-out">
-        <h4 class="text-center pt-8 pb-3 text-3xl font-bold">plans and Pricing</h4>
+        <h4 class="text-center pt-8 pb-3 text-3xl font-bold">
+          plans and Pricing
+        </h4>
       </div>
       <!-- content -->
       <div class="flex justify-center flex-wrap w-full pt-12 pb-8 px-4">
@@ -686,7 +700,10 @@
           </div>
         </div>
         <!-- 2nd box -->
-        <div class="w-full lg:w-4/12 xl:w-4/12 flex items-center" data-aos="zoom-in-left">
+        <div
+          class="w-full lg:w-4/12 xl:w-4/12 flex items-center"
+          data-aos="zoom-in-left"
+        >
           <div class="w-full lg:w-10/12 xl:w-10/12 bg-yellow-400 py-6">
             <div>
               <h4

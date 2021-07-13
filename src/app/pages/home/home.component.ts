@@ -12,8 +12,11 @@ export class HomeComponent implements OnInit {
   list = ['This is going to be text as MeetAds punchline.'];
   constructor() {}
   ngOnInit(): void {
-    AOS.init({
-      duration: 1500,
+    AOS.init({ once: true });
+    let scrollRef = 0;
+    window.addEventListener('scroll', function () {
+      // increase value up to 10, then refresh AOS
+      scrollRef <= 10 ? scrollRef++ : AOS.refresh();
     });
   }
 }
