@@ -608,13 +608,28 @@
           right-0
         "
       >
-        <!-- <img
+        <img
           data-aos="zoom-in"
           src="../../../assets/images/Group39895@3x.png"
           class="sideImg w-full"
           alt=""
-        /> -->
-        <iframe class="rounded sideImg w-full" src="https://www.youtube.com/embed/5Peo-ivmupE"  title="big-data "></iframe>
+        />
+        <!-- <figure class="sideImg">
+          <ng-container *ngIf="videodisabled; else videoblock">
+            <img
+              src="../../../assets/images/Group39895@3x.png"
+              class="img-fluid thumblin h_inherit cursor-pointer"
+              (click)="changeImg()"
+            />
+          </ng-container>
+          <ng-template #videoblock class="w-full h-full">
+            <iframe
+              class="w-full h-full iframe_video"
+              src="https://www.youtube.com/embed/5Peo-ivmupE?autoplay=1&mute=1&controls=0"
+              allowfullscreen
+            ></iframe>
+          </ng-template>
+        </figure> -->
       </div>
     </div>
   </div>
@@ -794,6 +809,7 @@
     </div>
     <div class="py-4">
       <carousel
+        [cellsToShow]="4"
         [autoplay]="true"
         [loop]="true"
         [autoplayInterval]="3000"

@@ -31,3 +31,7 @@
 .h_100px {
   height: 100px;
 }
+
+.h_inherit{
+  height: inherit!important;
+}

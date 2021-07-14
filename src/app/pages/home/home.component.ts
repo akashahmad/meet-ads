@@ -19,4 +19,21 @@ export class HomeComponent implements OnInit {
       scrollRef <= 10 ? scrollRef++ : AOS.refresh();
     });
   }
+  
+  play:string = "Play";
+  videodisabled:boolean = true;
+
+  changeImg(){
+    if(this.play == "Play")
+    {
+      this.play = "Pause",
+      this.videodisabled = false
+    }
+    else
+    {
+      this.play = "Play",
+      this.videodisabled = true
+    }
+  }
+
 }
