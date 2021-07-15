@@ -10,6 +10,8 @@ export class HomeComponent implements OnInit {
   show = false;
   title = 'angularTests';
   list = ['This Is Going To Be Text As MeetAds Punchline.'];
+  public innerWidth: any;
+  carousals: number = 4;
   constructor() {}
   ngOnInit(): void {
     AOS.init({ once: true });
@@ -18,22 +20,29 @@ export class HomeComponent implements OnInit {
       // increase value up to 10, then refresh AOS
       scrollRef <= 10 ? scrollRef++ : AOS.refresh();
     });
+    this.innerWidth = window.innerWidth;
   }
-  
-  play:string = "Play";
-  videodisabled:boolean = true;
-
-  changeImg(){
-    if(this.play == "Play")
-    {
-      this.play = "Pause",
-      this.videodisabled = false
+  carousalsValue() {
+    if (innerWidth <= 601) {
+      return 1;
     }
-    else
-    {
-      this.play = "Play",
-      this.videodisabled = true
+    if (innerWidth <= 900) {
+      return 2;
+    }
+    if (innerWidth <= 1200) {
+      return 3;
+    } else {
+      return 4;
     }
   }
+  play: string = 'Play';
+  videodisabled: boolean = true;
 
+  changeImg() {
+    if (this.play == 'Play') {
+      (this.play = 'Pause'), (this.videodisabled = false);
+    } else {
+      (this.play = 'Play'), (this.videodisabled = true);
+    }
+  }
 }

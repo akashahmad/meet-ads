@@ -272,7 +272,7 @@
           </div>
         </div>
         <!-- box3 -->
-        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5">
+        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5 px-lg-2 px-xl-2">
           <div class="w-full py-5 px-2 cursor-pointer">
             <!-- img -->
             <div class="flex justify-start py-2">
@@ -547,8 +547,8 @@
       <div
         class="w-full lg:w-7/12 xl:w-7/12 py-12 lg:px-12 xl:px-12 bg_darkblue2"
       >
-        <div class="container mx-auto px-2 lg:px-5 xl:px-5">
-          <div class="w-full lg:w-6/12 xl:w-6/12" data-aos="fade-right">
+        <div class="container mx-auto px-2 lg:px-10 xl:px-10">
+          <div class="w-full lg:w-8/12 xl:w-8/12" data-aos="fade-right">
             <h3
               class="
                 text-3xl
@@ -636,7 +636,7 @@
   <!-- section 6 -->
   <div class="bg-white py-5 px-3 section6_container">
     <div class="container mx-auto">
-      <div data-aos="zoom-out">
+      <div data-aos="zoom-out" class="pt-5">
         <h4 class="text-center pt-12 pb-3 text-3xl font-bold">
           Plans and Pricing
         </h4>
@@ -667,7 +667,7 @@
             </div>
             <div class="py-8 px-3">
               <p class="text-center text-sm py-2">Starting at</p>
-              <h4 class="text-center text-2xl py-2 font-bold">
+              <h4 class="text-center text-3xl py-2 font-bold">
                 $€ 0<span class="text-sm px-2 font-normal">p.m</span>
               </h4>
               <p class="text-center text_darkblue2 text-sm">
@@ -809,7 +809,7 @@
     </div>
     <div class="py-4">
       <carousel
-        [cellsToShow]="4"
+        [cellsToShow]="carousalsValue()"
         [autoplay]="true"
         [loop]="true"
         [autoplayInterval]="3000"
