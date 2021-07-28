@@ -213,7 +213,10 @@
         </div>
         <!-- body -->
         <div class="w-full table_body br_radius10 py-3">
-          <ul class="list-none flex justify-between data py-3">
+          <ul
+            class="list-none flex justify-between data py-3"
+            *ngFor="let hero of HEROES; let i = index"
+          >
             <li class="w-1/12 text-center px-5">
               <label class="checkbox_container flex">
                 <input type="checkbox" />
@@ -231,14 +234,17 @@
               <li class="medium_circle"></li>
               <li class="light_circle"></li>
             </ul>
-            <li class="w-2/12 px-1">VW Tiguan 5NA...</li>
-            <li class="w-1/12 px-1">€ 129.00</li>
-            <li class="w-1/12 px-1">09 July, 2021 18:49</li>
-            <li class="w-1/12 px-5">1 st.</li>
-            <li class="w-1/12 px-1">Nee</li>
-            <li class="w-1/12 px-5">Nee</li>
-            <li class="w-1/12 px-8">-</li>
-            <ul class="w-1/12 px-3 flex justify-end py-2">
+            <li class="w-2/12 px-1">{{ hero.titel }}</li>
+            <li class="w-1/12 px-1">{{ hero.euro }}</li>
+            <li class="w-1/12 px-1">{{ hero.AangemaaktOp }}</li>
+            <li class="w-1/12 px-5">{{ hero.voorraan }}</li>
+            <li class="w-1/12 px-1">{{ hero.Gearchiveerd }}</li>
+            <li class="w-1/12 px-5">{{ hero.Gearchiveerd }}</li>
+            <li class="w-1/12 px-8">{{ hero.Locatie }}</li>
+            <ul
+              class="w-1/12 px-3 flex justify-end py-2 cursor-pointer"
+              (click)="onItemClick(hero.id)"
+            >
               <li class="open_moreDetail_popup">
                 <img
                   src="../../../assets/images/dots.png"
@@ -246,7 +252,12 @@
                   class="h_7px"
                 />
               </li>
-              <ul class="more_option_popup common_popup_id">
+              <ul
+                class="more_option_popup margin_top2"
+                [ngClass]="
+                  hero.id === itemId && showPopup ? '' : ' common_popup_id'
+                "
+              >
                 <ul class="list-none content_container">
                   <li class="px-5 py-3">Bekiiikin</li>
                   <!-- horizontal line -->
@@ -372,6 +383,7 @@
                 w-full
                 text_yellow text-center
                 border
+                bg_buttonGray
                 rounded-lg
                 br_yellow
                 pl-3

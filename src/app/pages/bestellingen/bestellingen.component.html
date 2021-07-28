@@ -1,7 +1,9 @@
 <div class="flex w-full">
   <!-- left side navigation-->
   <div class="w-2/12 hidden lg:block xl:block">
-    <app-dashboard-navigation [className]="currentItem"></app-dashboard-navigation>
+    <app-dashboard-navigation
+      [className]="currentItem"
+    ></app-dashboard-navigation>
   </div>
   <!-- right side page content -->
   <div class="w-full lg:w-10/12 xl:w-10/12 bg_dashboard_color">
@@ -92,7 +94,10 @@
         </div>
         <!-- body -->
         <div class="w-full table_body br_radius10 py-3">
-          <ul class="list-none flex justify-between py-3 data" *ngFor="let hero of HEROES; let i = index">
+          <ul
+            class="list-none flex justify-between py-3 data"
+            *ngFor="let hero of HEROES; let i = index"
+          >
             <li class="w-1/12 text-center px-5">
               <label class="checkbox_container flex">
                 <input type="checkbox" />
@@ -105,24 +110,30 @@
                 <span class="checkmark"></span>
               </label>
             </li>
-            <li class="w-1/12 px-1">{{hero.afhalen}}</li>
-            <li class="w-1/12 px-1">{{hero.klant}}</li>
-            <li class="w-1/12">{{hero.orderId}}</li>
-            <li class="w-2/12">{{hero.AangemaaktOp}}</li>
-            <li class="w-1/12">{{hero.AantalProd}}</li>
-            <li class="w-1/12">{{hero.total}}</li>
-            <li class="w-1/12">{{hero.Verzendstatus}}</li>
-            <ul class="w-1/12 px-3 flex justify-end items-center">
-              <li class="open_moreDetail_popup cursor-pointer"
+            <li class="w-1/12 px-1">{{ hero.afhalen }}</li>
+            <li class="w-1/12 px-1">{{ hero.klant }}</li>
+            <li class="w-1/12">{{ hero.orderId }}</li>
+            <li class="w-2/12">{{ hero.AangemaaktOp }}</li>
+            <li class="w-1/12">{{ hero.AantalProd }}</li>
+            <li class="w-1/12">{{ hero.total }}</li>
+            <li class="w-1/12">{{ hero.Verzendstatus }}</li>
+            <ul
+              class="w-1/12 px-3 flex justify-end items-center cursor-pointer"
               (click)="onItemClick(hero.id)"
-              >
+            >
+              <li class="open_moreDetail_popup cursor-pointer">
                 <img
                   src="../../../assets/images/dots.png"
                   alt=""
                   class="h_7px"
                 />
               </li>
-              <ul class="more_option_popup common_popup_id">
+              <ul
+                class="more_option_popup margin_top "
+                [ngClass]="
+                  hero.id === itemId && showPopup ? '' : ' common_popup_id'
+                "
+              >
                 <ul class="list-none content_container">
                   <li class="px-5 py-3">Bekiiikin</li>
                   <!-- horizontal line -->

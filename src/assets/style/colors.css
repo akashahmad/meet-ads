@@ -24,6 +24,13 @@
 .br_yellow {
   border: 1px solid #e4c218;
 }
+.bg_buttonGray{
+  background-color: #293844;
+}
+.bg_buttonGray:hover{
+  background-color: #e4c218;
+  color: #000!important;
+}
 /* components background color of dashboard */
 .bg_component_color {
   background-color: rgba(41, 57, 68, 0.96);

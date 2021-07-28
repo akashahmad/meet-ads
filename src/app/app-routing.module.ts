@@ -9,6 +9,7 @@ import { AdvertentiesComponent } from './pages/advertenties/advertenties.compone
 import { Bestellingen2Component } from './pages/bestellingen2/bestellingen2.component';
 import { BedrijfComponent } from './pages/bedrijf/bedrijf.component';
 import { Advertenties2Component } from './pages/advertenties2/advertenties2.component';
+import { KlantenComponent } from './pages/klanten/klanten.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'bestellingen2', component: Bestellingen2Component },
   { path: 'bedrijf', component: BedrijfComponent },
   { path: 'advertenties2', component: Advertenties2Component },
+  { path: 'klanten', component: KlantenComponent },
 ];
 
 @NgModule({

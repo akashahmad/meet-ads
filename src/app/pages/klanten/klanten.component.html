@@ -1,0 +1,112 @@
+<div class="flex w-full">
+  <!-- left side navigation-->
+  <div class="w-2/12 hidden lg:block xl:block">
+    <app-dashboard-navigation></app-dashboard-navigation>
+  </div>
+  <!-- right side page content -->
+  <div class="w-full lg:w-10/12 xl:w-10/12 bg_dashboard_color">
+    <!-- header -->
+    <div>
+      <app-dashboard-header [item]="currentItem"></app-dashboard-header>
+    </div>
+    <!-- filters -->
+    <div
+      class="
+        flex flex-col
+        lg:flex-row
+        xl:flex-row
+        justify-between
+        container
+        px-6
+        pt-6
+        mx-auto
+        dashboard_filters_container
+      "
+    >
+      <!-- left side -->
+      <div class="input_container w-full flex">
+        <div class="lg:w-7/12 xl:w-7/12 flex">
+          <input
+            placeholder="Zoek op bedrijfsnaam, contactpersoon etc"
+            class="input px-4 w-full py-2"
+          />
+          <div class="search_icon_container">
+            <img
+              src="../../../assets/images/magnifying-glass@3x.png"
+              class="h_15px absolute"
+            />
+          </div>
+        </div>
+        <div class="px-3">
+          <button
+            type="button"
+            class="
+              text_yellow text-center
+              border
+              rounded-lg
+              br_yellow
+              pl-3
+              pr-4
+              py-2
+              bg_buttonGray
+            "
+          >
+            Clear
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- table -->
+    <div class="table_container container mx-auto py-4 px-6">
+      <div
+        class="br_radius6 table_responsive_width bg_component_color px-3 py-3"
+      >
+        <!-- header -->
+        <div class="w-full table_header br_radius10 py-3 px-1">
+          <ul class="list-none flex justify-between py-2">
+            <li class="w-2/12 px-6">Email</li>
+            <li class="w-2/12">Telnr</li>
+            <li class="w-2/12">Zakalijk</li>
+            <li class="w-2/12">Aangemaakt op</li>
+            <li class="w-2/12">Laatste transactie</li>
+            <li class="w-2/12 px-1"></li>
+          </ul>
+        </div>
+        <!-- body -->
+        <div class="w-full table_body br_radius10 py-3">
+          <ul
+            class="list-none flex justify-between data py-3"
+            *ngFor="let hero of HEROES; let i = index"
+          >
+            <li class="w-2/12 px-6">{{ hero.email }}</li>
+            <li class="w-2/12 flex px-1">
+              {{ hero.telnr }}
+            </li>
+            <li class="w-2/12 px-2">
+              {{ hero.Zakalijk }}
+            </li>
+            <li class="w-2/12 px-1">{{ hero.Aangemaakt_op }}</li>
+            <li class="w-2/12 px-1">{{ hero.Laatste_transactie }}</li>
+            <ul class="w-2/12 px-3 flex justify-center py-2">
+              <li class="open_moreDetail_popup">
+                <img
+                  src="../../../assets/images/dots.png"
+                  alt=""
+                  class="h_7px"
+                />
+              </li>
+              <ul class="more_option_popup common_popup_id">
+                <ul class="list-none content_container">
+                  <li class="px-5 py-3">Bekiiikin</li>
+                  <!-- horizontal line -->
+                  <li class="hr_line"></li>
+                  <li class="px-5 py-3">Facturen</li>
+                </ul>
+              </ul>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

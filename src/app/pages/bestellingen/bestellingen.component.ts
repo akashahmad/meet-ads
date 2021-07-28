@@ -29,16 +29,6 @@ export class BestellingenComponent implements OnInit {
       Verzendstatus: 'Verzonden',
     },
     {
-      id: 5,
-      afhalen: 'Nee',
-      klant: 'E.Driessen',
-      orderId: 'DOCfJ_',
-      AangemaaktOp: '09 July, 2021 18:49',
-      AantalProd: '1',
-      total: '€ 108,99',
-      Verzendstatus: 'Verzonden',
-    },
-    {
       id: 3,
       afhalen: 'Nee',
       klant: 'E.Driessen',
@@ -88,12 +78,28 @@ export class BestellingenComponent implements OnInit {
       total: '€ 108,99',
       Verzendstatus: 'Verzonden',
     },
+    {
+      id: 8,
+      afhalen: 'Nee',
+      klant: 'E.Driessen',
+      orderId: 'DOCfJ_',
+      AangemaaktOp: '09 July, 2021 18:49',
+      AantalProd: '1',
+      total: '€ 108,99',
+      Verzendstatus: 'Verzonden',
+    },
   ];
-  itemId=0;
+  itemId = 0;
+  showPopup = false;
   ngOnInit(): void {}
   currentItem = 'Bestellingen ';
   className = 'bestellingen';
   onItemClick(id: any) {
     this.itemId = id;
+    if (this.itemId === id && this.showPopup === true) {
+      this.showPopup = false;
+    } else if (this.itemId === id && this.showPopup === false) {
+      this.showPopup = true;
+    }
   }
 }

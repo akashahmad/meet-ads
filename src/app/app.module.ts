@@ -20,6 +20,7 @@ import { AdvertentiesComponent } from './pages/advertenties/advertenties.compone
 import { Bestellingen2Component } from './pages/bestellingen2/bestellingen2.component';
 import { BedrijfComponent } from './pages/bedrijf/bedrijf.component';
 import { Advertenties2Component } from './pages/advertenties2/advertenties2.component';
+import { KlantenComponent } from './pages/klanten/klanten.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { Advertenties2Component } from './pages/advertenties2/advertenties2.comp
     Bestellingen2Component,
     BedrijfComponent,
     Advertenties2Component,
+    KlantenComponent,
   ],
   imports: [
     BrowserModule,
