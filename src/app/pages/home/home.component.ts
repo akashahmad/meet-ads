@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
     }
     if (innerWidth <= 1200) {
       return 3;
+      
     } else {
       return 4;
     }
