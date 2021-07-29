@@ -21,6 +21,10 @@ import { Bestellingen2Component } from './pages/bestellingen2/bestellingen2.comp
 import { BedrijfComponent } from './pages/bedrijf/bedrijf.component';
 import { Advertenties2Component } from './pages/advertenties2/advertenties2.component';
 import { KlantenComponent } from './pages/klanten/klanten.component';
+import { FacturenComponent } from './pages/facturen/facturen.component';
+import { WebshopComponent } from './pages/webshop/webshop.component';
+import { ContactpersonComponent } from './components/contactperson/contactperson.component';
+import { AlgemeenComponent } from './components/algemeen/algemeen.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +45,10 @@ import { KlantenComponent } from './pages/klanten/klanten.component';
     BedrijfComponent,
     Advertenties2Component,
     KlantenComponent,
+    FacturenComponent,
+    WebshopComponent,
+    ContactpersonComponent,
+    AlgemeenComponent,
   ],
   imports: [
     BrowserModule,

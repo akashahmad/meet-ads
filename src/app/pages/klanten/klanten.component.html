@@ -87,7 +87,10 @@
             </li>
             <li class="w-2/12 px-1">{{ hero.Aangemaakt_op }}</li>
             <li class="w-2/12 px-1">{{ hero.Laatste_transactie }}</li>
-            <ul class="w-2/12 px-3 flex justify-center py-2">
+            <ul
+              class="w-2/12 px-3 flex justify-center py-2 cursor-pointer"
+              (click)="onItemClick(hero.id)"
+            >
               <li class="open_moreDetail_popup">
                 <img
                   src="../../../assets/images/dots.png"
@@ -95,7 +98,12 @@
                   class="h_7px"
                 />
               </li>
-              <ul class="more_option_popup common_popup_id">
+              <ul
+                class="more_option_popup margin_top2 cursor-pointer"
+                [ngClass]="
+                  hero.id === itemId && showPopup ? '' : ' common_popup_id'
+                "
+              >
                 <ul class="list-none content_container">
                   <li class="px-5 py-3">Bekiiikin</li>
                   <!-- horizontal line -->
@@ -106,6 +114,76 @@
             </ul>
           </ul>
         </div>
+      </div>
+    </div>
+    <!-- pagination -->
+    <div
+      class="
+        flex
+        justify-between
+        container
+        mx-auto
+        px-6
+        pt-2
+        pb-10
+        flex-col-reverse
+        items-center
+        lg:flex-row
+        xl:flex-row
+        lg:items-start
+        xl:items-start
+      "
+    >
+      <!-- left side -->
+      <div class="py-5 lg:py-0 xl:py-0">
+        <p class="text_darkGray text-sm">Showing 14 out of 189 entries</p>
+      </div>
+      <!-- right side -->
+      <div>
+        <ul class="list-none flex items-center">
+          <li class="px-2 cursor-pointer pagination_arrow_color"><</li>
+          <li
+            class="
+              mx-1
+              pagination_page_number_padding
+              text-sm
+              bg_yellow
+              rounded-full
+              cursor-pointer
+              text-center
+            "
+          >
+            1
+          </li>
+          <li
+            class="
+              mx-1
+              pagination_page_number_padding
+              text-sm
+              cursor-pointer
+              rounded-full
+              cursor-pointer
+              pagination_inactive_number
+              text-center text_darkGray
+            "
+          >
+            2
+          </li>
+          <li
+            class="
+              pagination_page_number_padding
+              text-sm
+              cursor-pointer
+              rounded-full
+              cursor-pointer
+              pagination_inactive_number
+              text-center text_darkGray
+            "
+          >
+            3
+          </li>
+          <li class="px-2 cursor-pointer pagination_arrow_color">></li>
+        </ul>
       </div>
     </div>
   </div>

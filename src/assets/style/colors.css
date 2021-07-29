@@ -60,3 +60,18 @@
 .text_Red {
   color: #f24010;
 }
+
+/* pagination arrow color */
+.pagination_arrow_color{
+  color: #8b8b8b;
+}
+.pagination_arrow_color:hover{
+  color: #e4c218;
+}
+.pagination_inactive_number{
+  background-color: #233039;  
+}
+.pagination_inactive_number:hover{
+  color: #000;
+  background-color: #e4c218;  
+}

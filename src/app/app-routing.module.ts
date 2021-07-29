@@ -10,6 +10,8 @@ import { Bestellingen2Component } from './pages/bestellingen2/bestellingen2.comp
 import { BedrijfComponent } from './pages/bedrijf/bedrijf.component';
 import { Advertenties2Component } from './pages/advertenties2/advertenties2.component';
 import { KlantenComponent } from './pages/klanten/klanten.component';
+import { FacturenComponent } from './pages/facturen/facturen.component';
+import { WebshopComponent } from './pages/webshop/webshop.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: 'bedrijf', component: BedrijfComponent },
   { path: 'advertenties2', component: Advertenties2Component },
   { path: 'klanten', component: KlantenComponent },
+  { path: 'facturen', component: FacturenComponent },
+  { path: 'webshop', component: WebshopComponent },
 ];
 
 @NgModule({

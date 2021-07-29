@@ -11,7 +11,6 @@ export class DashboardHeaderComponent implements OnInit {
   mySidenav: boolean = false;
   constructor(private Location: Location) {
     this.activeRoute = this.Location.path();
-    console.log("asd",this.Location.path())
   }
 
   ngOnInit(): void {}

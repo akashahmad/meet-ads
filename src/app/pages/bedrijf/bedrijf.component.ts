@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bedrijf.component.css'],
 })
 export class BedrijfComponent implements OnInit {
+  activeComponent: string = 'algemeen';
   constructor() {}
 
   ngOnInit(): void {}
   currentItem = 'Bedrijf ';
-  className = 'bedrijf';
+  showActiveComponent(component: string) {
+    this.activeComponent = component;
+  }
 }

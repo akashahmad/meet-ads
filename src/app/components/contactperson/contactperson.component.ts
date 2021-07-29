@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-klanten',
-  templateUrl: './klanten.component.html',
-  styleUrls: ['./klanten.component.css']
+  selector: 'app-contactperson',
+  templateUrl: './contactperson.component.html',
+  styleUrls: ['./contactperson.component.css']
 })
-export class KlantenComponent implements OnInit {
+export class ContactpersonComponent implements OnInit {
   HEROES = [
     {
       id: 1,
@@ -110,5 +110,6 @@ export class KlantenComponent implements OnInit {
     } else if (this.itemId === id && this.showPopup === false) {
       this.showPopup = true;
     }
-  }
+  }    
+
 }
