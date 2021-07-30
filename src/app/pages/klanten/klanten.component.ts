@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-klanten',
   templateUrl: './klanten.component.html',
-  styleUrls: ['./klanten.component.css']
+  styleUrls: ['./klanten.component.css'],
 })
 export class KlantenComponent implements OnInit {
   HEROES = [
@@ -94,14 +94,14 @@ export class KlantenComponent implements OnInit {
       Zakalijk: 'Nee',
       Aangemaakt_op: '09 July, 2021  18:49',
       Laatste_transactie: '09 July, 2021  18:49',
-    }
+    },
   ];
   itemId = 0;
   showPopup = false;
-  constructor() { }
+  formPopup: boolean = false;
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
   currentItem = 'Klanten';
   onItemClick(id: any) {
     this.itemId = id;
@@ -110,5 +110,11 @@ export class KlantenComponent implements OnInit {
     } else if (this.itemId === id && this.showPopup === false) {
       this.showPopup = true;
     }
+  }
+  closeNav() {
+    this.formPopup = false;
+  }
+  openNav() {
+    this.formPopup = true;
   }
 }

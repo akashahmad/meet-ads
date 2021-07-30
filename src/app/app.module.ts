@@ -25,6 +25,9 @@ import { FacturenComponent } from './pages/facturen/facturen.component';
 import { WebshopComponent } from './pages/webshop/webshop.component';
 import { ContactpersonComponent } from './components/contactperson/contactperson.component';
 import { AlgemeenComponent } from './components/algemeen/algemeen.component';
+import { OpeningstijdenComponent } from './components/openingstijden/openingstijden.component';
+import { SocialComponent } from './components/social/social.component';
+import { WatermerkComponent } from './components/watermerk/watermerk.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +52,9 @@ import { AlgemeenComponent } from './components/algemeen/algemeen.component';
     WebshopComponent,
     ContactpersonComponent,
     AlgemeenComponent,
+    OpeningstijdenComponent,
+    SocialComponent,
+    WatermerkComponent,
   ],
   imports: [
     BrowserModule,

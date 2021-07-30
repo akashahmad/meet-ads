@@ -6,11 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./webshop.component.css']
 })
 export class WebshopComponent implements OnInit {
-
+  activeComponent: string = 'social';
   constructor() { }
 
   ngOnInit(): void {
   }
   currentItem = 'Webshop ';
+  showActiveComponent(component: string) {
+    this.activeComponent = component;
+  }
 
 }

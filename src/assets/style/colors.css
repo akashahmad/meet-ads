@@ -35,6 +35,9 @@
 .bg_component_color {
   background-color: rgba(41, 57, 68, 0.96);
 }
+.bg_component_color2 {
+  background-color: #44515b!important;
+}
 /* color */
 .text_darkblue {
   color: #354249;
