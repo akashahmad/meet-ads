@@ -61,7 +61,6 @@
       >
         <div
           class="
-            inActive_button
             pr-2
             pl-2
             lg:pl-0
@@ -72,6 +71,12 @@
             lg:py-0
             xl:py-0
           "
+          [ngClass]="
+            activeComponent === 'categorieen'
+              ? ' active_button'
+              : ' inActive_button'
+          "
+          (click)="showActiveComponent('categorieen')"
         >
           <button class="px-5 py-3 text-sm text-center">Categorieen</button>
         </div>
@@ -87,7 +92,15 @@
         >
           <button class="px-5 py-3 text-sm text-center">Social</button>
         </div>
-        <div class="inActive_button px-2 py-1 lg:py-0 xl:py-0">
+        <div
+          class="inActive_button px-2 py-1 lg:py-0 xl:py-0"
+          [ngClass]="
+            activeComponent === 'teksten'
+              ? ' active_button'
+              : ' inActive_button'
+          "
+          (click)="showActiveComponent('teksten')"
+        >
           <button class="px-5 py-3 text-sm text-center">Teksten</button>
         </div>
         <div
@@ -104,9 +117,79 @@
       </div>
     </div>
     <div>
+      <!-- categorieen -->
+      <div [ngClass]="activeComponent === 'categorieen' ? ' block' : ' hidden'">
+        <app-categorieen></app-categorieen>
+      </div>
       <!-- social -->
       <div [ngClass]="activeComponent === 'social' ? ' block' : ' hidden'">
         <app-social></app-social>
+      </div>
+      <!-- watermerk -->
+      <div [ngClass]="activeComponent === 'teksten' ? ' block' : ' hidden'">
+        <div class="py-7">
+          <!-- button -->
+          <div class="container mx-auto px-6">
+            <button
+              class="bg_buttonGray br_yellow px-5 py-2 rounded-lg text_yellow"
+            >
+              Model toevoegen
+            </button>
+          </div>
+          <!-- links -->
+          <div class="container mx-auto px-6 py-6">
+            <div
+              class="
+                flex flex-col
+                items-center
+                lg:flex-row lg:items-start
+                xl:flex-row xl:items-start
+                links_container
+              "
+            >
+              <div
+                class="
+                  active_button
+                  pr-2
+                  pl-2
+                  lg:pl-0
+                  xl:pl-0
+                  lg:pr-2
+                  xl:pr-2
+                  py-1
+                  lg:py-0
+                  xl:py-0
+                "
+              >
+                <button class="px-5 py-3 text-sm text-center">
+                  algemene-voorwaarden
+                </button>
+              </div>
+              <div class="inActive_button px-2 py-1 lg:py-0 xl:py-0">
+                <button class="px-5 py-3 text-sm text-center">Contact</button>
+              </div>
+              <div class="px-2 py-1 lg:py-0 xl:py-0 inActive_button">
+                <button class="px-5 py-3 text-sm text-center">
+                  Disclaimer
+                </button>
+              </div>
+              <div class="inActive_button px-2 py-1 lg:py-0 xl:py-0">
+                <button class="px-5 py-3 text-sm text-center">Home - 1</button>
+              </div>
+              <div class="inActive_button px-2 py-1 lg:py-0 xl:py-0">
+                <button class="px-5 py-3 text-sm text-center">
+                  privacy-verklaring
+                </button>
+              </div>
+              <div class="inActive_button px-2 py-1 lg:py-0 xl:py-0">
+                <button class="px-5 py-3 text-sm text-center">
+                  retourbeleid
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <app-teksten></app-teksten>
       </div>
       <!-- watermerk -->
       <div [ngClass]="activeComponent === 'watermerk' ? ' block' : ' hidden'">

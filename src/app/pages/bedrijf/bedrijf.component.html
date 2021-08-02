@@ -88,7 +88,7 @@
           <button class="px-5 py-3 text-sm text-center">Accounts</button>
         </div>
         <div
-          class=" px-2 py-1 lg:py-0 xl:py-0 "
+          class="px-2 py-1 lg:py-0 xl:py-0"
           [ngClass]="
             activeComponent === 'openingstijden'
               ? ' active_button'
@@ -98,9 +98,17 @@
         >
           <button class="px-5 py-3 text-sm text-center">Openingstijden</button>
         </div>
-        <div class="inActive_button px-2 py-1 lg:py-0 xl:py-0">
+        <div
+          class="inActive_button px-2 py-1 lg:py-0 xl:py-0"
+          [ngClass]="
+            activeComponent === 'instellingen'
+              ? ' active_button'
+              : ' inActive_button'
+          "
+          (click)="showActiveComponent('instellingen')"
+        >
           <button class="px-5 py-3 text-sm text-center">Instellingen</button>
-        </div>
+        </div>        
       </div>
     </div>
     <div [ngClass]="activeComponent === 'algemeen' ? ' block' : ' hidden'">
@@ -111,10 +119,13 @@
     >
       <app-contactperson></app-contactperson>
     </div>
-    <div     
+    <div
       [ngClass]="activeComponent === 'openingstijden' ? ' block' : ' hidden'"
     >
       <app-openingstijden></app-openingstijden>
-    </div>   
-   </div>
+    </div>
+    <div [ngClass]="activeComponent === 'instellingen' ? ' block' : ' hidden'">
+      <app-instellingen></app-instellingen>
+    </div>
+  </div>
 </div>

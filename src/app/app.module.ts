@@ -28,6 +28,9 @@ import { AlgemeenComponent } from './components/algemeen/algemeen.component';
 import { OpeningstijdenComponent } from './components/openingstijden/openingstijden.component';
 import { SocialComponent } from './components/social/social.component';
 import { WatermerkComponent } from './components/watermerk/watermerk.component';
+import { TekstenComponent } from './common-component/teksten/teksten.component';
+import { InstellingenComponent } from './components/instellingen/instellingen.component';
+import { CategorieenComponent } from './components/categorieen/categorieen.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +58,9 @@ import { WatermerkComponent } from './components/watermerk/watermerk.component';
     OpeningstijdenComponent,
     SocialComponent,
     WatermerkComponent,
+    TekstenComponent,
+    InstellingenComponent,
+    CategorieenComponent,
   ],
   imports: [
     BrowserModule,

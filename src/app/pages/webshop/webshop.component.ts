@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./webshop.component.css']
 })
 export class WebshopComponent implements OnInit {
-  activeComponent: string = 'social';
+  activeComponent: string = 'categorieen';
   constructor() { }
 
   ngOnInit(): void {
