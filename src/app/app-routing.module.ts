@@ -12,6 +12,7 @@ import { Advertenties2Component } from './pages/advertenties2/advertenties2.comp
 import { KlantenComponent } from './pages/klanten/klanten.component';
 import { FacturenComponent } from './pages/facturen/facturen.component';
 import { WebshopComponent } from './pages/webshop/webshop.component';
+import { TransactieComponent } from './pages/transactie/transactie.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'klanten', component: KlantenComponent },
   { path: 'facturen', component: FacturenComponent },
   { path: 'webshop', component: WebshopComponent },
+  { path: 'transactie', component: TransactieComponent },
 ];
 
 @NgModule({

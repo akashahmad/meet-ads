@@ -31,6 +31,9 @@ import { WatermerkComponent } from './components/watermerk/watermerk.component';
 import { TekstenComponent } from './common-component/teksten/teksten.component';
 import { InstellingenComponent } from './components/instellingen/instellingen.component';
 import { CategorieenComponent } from './components/categorieen/categorieen.component';
+import { TransactieComponent } from './pages/transactie/transactie.component';
+import { VerzendkostenComponent } from './components/verzendkosten/verzendkosten.component';
+import { NederlandComponent } from './components/nederland/nederland.component';
 
 @NgModule({
   declarations: [
@@ -61,6 +64,9 @@ import { CategorieenComponent } from './components/categorieen/categorieen.compo
     TekstenComponent,
     InstellingenComponent,
     CategorieenComponent,
+    TransactieComponent,
+    VerzendkostenComponent,
+    NederlandComponent,
   ],
   imports: [
     BrowserModule,

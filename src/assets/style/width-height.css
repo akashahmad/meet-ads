@@ -49,6 +49,12 @@
 .h_100px {
   height: 100px;
 }
+.h_120px {
+  height: 120px;
+}
+.h_130px {
+  height: 130px;
+}
 
 .h_inherit {
   height: inherit !important;

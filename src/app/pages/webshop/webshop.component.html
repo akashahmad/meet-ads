@@ -60,17 +60,7 @@
         "
       >
         <div
-          class="
-            pr-2
-            pl-2
-            lg:pl-0
-            xl:pl-0
-            lg:pr-2
-            xl:pr-2
-            py-1
-            lg:py-0
-            xl:py-0
-          "
+          class="pr-2 pl-2 lg:pl-0 xl:pl-0 lg:pr-2 xl:pr-2 py-1 lg:py-0 xl:py-0"
           [ngClass]="
             activeComponent === 'categorieen'
               ? ' active_button'
@@ -80,7 +70,15 @@
         >
           <button class="px-5 py-3 text-sm text-center">Categorieen</button>
         </div>
-        <div class="inActive_button px-2 py-1 lg:py-0 xl:py-0">
+        <div
+          class="px-2 py-1 lg:py-0 xl:py-0"
+          [ngClass]="
+            activeComponent === 'verzendkosten'
+              ? ' active_button'
+              : ' inActive_button'
+          "
+          (click)="showActiveComponent('verzendkosten')"
+        >
           <button class="px-5 py-3 text-sm text-center">Verzendkosten</button>
         </div>
         <div
@@ -194,6 +192,12 @@
       <!-- watermerk -->
       <div [ngClass]="activeComponent === 'watermerk' ? ' block' : ' hidden'">
         <app-watermerk></app-watermerk>
+      </div>
+      <!-- watermerk -->
+      <div
+        [ngClass]="activeComponent === 'verzendkosten' ? ' block' : ' hidden'"
+      >
+        <app-verzendkosten></app-verzendkosten>
       </div>
     </div>
   </div>
