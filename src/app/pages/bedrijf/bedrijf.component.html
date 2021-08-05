@@ -1,24 +1,25 @@
 <div class="flex w-full">
   <!-- left side navigation-->
-  <div class="w-2/12 hidden lg:block xl:block">
+  <div
+    class="hidden lg:block xl:block"
+    [ngClass]="className === 'true' ? 'w-2/12' : 'w-1/12'"
+  >
     <app-dashboard-navigation
-      [className]="currentItem"
+      [className]="className"
     ></app-dashboard-navigation>
   </div>
   <!-- right side page content -->
   <div
-    class="
-      w-full
-      lg:w-10/12
-      xl:w-10/12
-      bg_dashboard_color
-      destellingen2
-      bedrijf_container
+    class="bg_dashboard_color destellingen2 bedrijf_container"
+    [ngClass]="
+      className === 'true'
+        ? 'w-full lg:w-10/12 xl:w-10/12'
+        : 'w-full lg:w-11/12 xl:w-11/12'
     "
   >
     <!-- header -->
     <div>
-      <app-dashboard-header [item]="currentItem"></app-dashboard-header>
+      <app-dashboard-header         (newItemEvent)="addItem($event)" [item]="currentItem"></app-dashboard-header>
     </div>
     <!-- content -->
     <div
@@ -108,7 +109,7 @@
           (click)="showActiveComponent('instellingen')"
         >
           <button class="px-5 py-3 text-sm text-center">Instellingen</button>
-        </div>        
+        </div>
       </div>
     </div>
     <div [ngClass]="activeComponent === 'algemeen' ? ' block' : ' hidden'">

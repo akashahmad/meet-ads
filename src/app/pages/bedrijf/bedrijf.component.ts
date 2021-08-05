@@ -14,4 +14,8 @@ export class BedrijfComponent implements OnInit {
   showActiveComponent(component: string) {
     this.activeComponent = component;
   }
+  className = 'false';
+  addItem(newItem: string) {
+    this.className = newItem;
+  }
 }

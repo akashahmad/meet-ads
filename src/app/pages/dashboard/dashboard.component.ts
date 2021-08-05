@@ -41,7 +41,10 @@ export class DashboardComponent implements OnInit {
   itemId = 0;
   ngOnInit(): void {}
   currentItem = 'Dashboard ';
-  className = '';
+  className = 'false';
+  addItem(newItem: string) {
+    this.className = newItem;
+  }
   onItemClick(id: any) {
     this.itemId = id;
   }

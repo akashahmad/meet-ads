@@ -5,12 +5,10 @@ import { DashboardNavigationComponent } from './dashboard-navigation.component';
 describe('DashboardNavigationComponent', () => {
   let component: DashboardNavigationComponent;
   let fixture: ComponentFixture<DashboardNavigationComponent>;
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashboardNavigationComponent ]
-    })
-    .compileComponents();
+      declarations: [DashboardNavigationComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
@@ -18,7 +16,6 @@ describe('DashboardNavigationComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
   it('should create', () => {
     expect(component).toBeTruthy();
   });

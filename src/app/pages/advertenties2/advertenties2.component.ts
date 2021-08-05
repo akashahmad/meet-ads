@@ -12,4 +12,8 @@ export class Advertenties2Component implements OnInit {
   ngOnInit(): void {
   }
   currentItem = 'Advertenties';
+  className = 'false';
+  addItem(newItem: string) {
+    this.className = newItem;
+  }
 }

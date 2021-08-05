@@ -1,13 +1,28 @@
 <div class="flex w-full">
   <!-- left side navigation-->
-  <div class="w-2/12 hidden lg:block xl:block">
-    <app-dashboard-navigation></app-dashboard-navigation>
+  <div
+    class="hidden lg:block xl:block"
+    [ngClass]="className === 'true' ? 'w-2/12' : 'w-1/12'"
+  >
+    <app-dashboard-navigation
+      [className]="className"
+    ></app-dashboard-navigation>
   </div>
   <!-- right side page content -->
-  <div class="w-full lg:w-10/12 xl:w-10/12 bg_dashboard_color">
+  <div
+    class="bg_dashboard_color"
+    [ngClass]="
+      className === 'true'
+        ? 'w-full lg:w-10/12 xl:w-10/12'
+        : 'w-full lg:w-11/12 xl:w-11/12'
+    "
+  >
     <!-- header -->
     <div>
-      <app-dashboard-header [item]="currentItem"></app-dashboard-header>
+      <app-dashboard-header
+        (newItemEvent)="addItem($event)"
+        [item]="currentItem"
+      ></app-dashboard-header>
     </div>
     <!-- filters -->
     <div
@@ -59,7 +74,7 @@
     <!-- table -->
     <div class="table_container container mx-auto py-4 px-6">
       <div
-        class="br_radius6  table_responsive_width bg_component_color px-3 py-3"
+        class="br_radius6 table_responsive_width bg_component_color px-3 py-3"
       >
         <!-- header -->
         <div class="w-full table_header br_radius10 py-3 px-1">
@@ -444,7 +459,7 @@
                   py-2
                 "
               >
-              Toewoegen
+                Toewoegen
               </button>
             </div>
           </div>

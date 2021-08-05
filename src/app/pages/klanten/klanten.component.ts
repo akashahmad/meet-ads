@@ -117,4 +117,8 @@ export class KlantenComponent implements OnInit {
   openNav() {
     this.formPopup = true;
   }
+  className = 'false';
+  addItem(newItem: string) {
+    this.className = newItem;
+  }
 }

@@ -100,4 +100,8 @@ export class AdvertentiesComponent implements OnInit {
       this.showPopup = true;
     }
   }
+  className = 'false';
+  addItem(newItem: string) {
+    this.className = newItem;
+  }
 }

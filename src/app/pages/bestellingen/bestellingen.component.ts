@@ -93,7 +93,6 @@ export class BestellingenComponent implements OnInit {
   showPopup = false;
   ngOnInit(): void {}
   currentItem = 'Bestellingen ';
-  className = 'bestellingen';
   onItemClick(id: any) {
     this.itemId = id;
     if (this.itemId === id && this.showPopup === true) {
@@ -101,5 +100,9 @@ export class BestellingenComponent implements OnInit {
     } else if (this.itemId === id && this.showPopup === false) {
       this.showPopup = true;
     }
+  }
+  className = 'false';
+  addItem(newItem: string) {
+    this.className = newItem;
   }
 }

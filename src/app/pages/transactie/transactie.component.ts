@@ -12,5 +12,8 @@ export class TransactieComponent implements OnInit {
   ngOnInit(): void {
   }
   currentItem = 'Transactie';
-
+  className = 'false';
+  addItem(newItem: string) {
+    this.className = newItem;
+  }
 }

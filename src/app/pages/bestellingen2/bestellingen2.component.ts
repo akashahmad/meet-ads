@@ -17,4 +17,8 @@ export class Bestellingen2Component implements OnInit {
     this.formPopup = true;
   }
   currentItem = 'Bestellingen';
+  className = 'false';
+  addItem(newItem: string) {
+    this.className = newItem;
+  }
 }

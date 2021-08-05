@@ -1,13 +1,28 @@
 <div class="flex w-full">
   <!-- left side navigation-->
-  <div class="w-2/12 hidden lg:block xl:block">
-    <app-dashboard-navigation></app-dashboard-navigation>
+  <div
+    class="hidden lg:block xl:block"
+    [ngClass]="className === 'true' ? 'w-2/12' : 'w-1/12'"
+  >
+    <app-dashboard-navigation
+      [className]="className"
+    ></app-dashboard-navigation>
   </div>
   <!-- right side page content -->
-  <div class="w-full lg:w-10/12 xl:w-10/12 bg_dashboard_color">
+  <div
+    class="bg_dashboard_color"
+    [ngClass]="
+      className === 'true'
+        ? 'w-full lg:w-10/12 xl:w-10/12'
+        : 'w-full lg:w-11/12 xl:w-11/12'
+    "
+  >
     <!-- header -->
     <div>
-      <app-dashboard-header [item]="currentItem"></app-dashboard-header>
+      <app-dashboard-header
+        (newItemEvent)="addItem($event)"
+        [item]="currentItem"
+      ></app-dashboard-header>
     </div>
     <!-- filters -->
     <div
@@ -279,75 +294,75 @@
         </div>
       </div>
     </div>
-        <!-- pagination -->
-        <div
-        class="
-          flex
-          justify-between
-          container
-          mx-auto
-          px-6
-          pt-2
-          pb-10
-          flex-col-reverse
-          items-center
-          lg:flex-row
-          xl:flex-row
-          lg:items-start
-          xl:items-start
-        "
-      >
-        <!-- left side -->
-        <div class="py-5 lg:py-0 xl:py-0">
-          <p class="text_darkGray text-sm">Showing 14 out of 189 entries</p>
-        </div>
-        <!-- right side -->
-        <div>
-          <ul class="list-none flex items-center">
-            <li class="px-2 cursor-pointer pagination_arrow_color"><</li>
-            <li
-              class="
-                mx-1
-                pagination_page_number_padding
-                text-sm
-                bg_yellow
-                rounded-full
-                cursor-pointer
-                text-center
-              "
-            >
-              1
-            </li>
-            <li
-              class="
-                mx-1
-                pagination_page_number_padding
-                text-sm
-                cursor-pointer
-                rounded-full
-                cursor-pointer
-                pagination_inactive_number
-                text-center text_darkGray
-              "
-            >
-              2
-            </li>
-            <li
-              class="
-                pagination_page_number_padding
-                text-sm
-                cursor-pointer
-                rounded-full
-                cursor-pointer
-                pagination_inactive_number
-                text-center text_darkGray
-              "
-            >
-              3
-            </li>
-            <li class="px-2 cursor-pointer pagination_arrow_color">></li>
-          </ul>
-        </div>
+    <!-- pagination -->
+    <div
+      class="
+        flex
+        justify-between
+        container
+        mx-auto
+        px-6
+        pt-2
+        pb-10
+        flex-col-reverse
+        items-center
+        lg:flex-row
+        xl:flex-row
+        lg:items-start
+        xl:items-start
+      "
+    >
+      <!-- left side -->
+      <div class="py-5 lg:py-0 xl:py-0">
+        <p class="text_darkGray text-sm">Showing 14 out of 189 entries</p>
       </div>
+      <!-- right side -->
+      <div>
+        <ul class="list-none flex items-center">
+          <li class="px-2 cursor-pointer pagination_arrow_color"><</li>
+          <li
+            class="
+              mx-1
+              pagination_page_number_padding
+              text-sm
+              bg_yellow
+              rounded-full
+              cursor-pointer
+              text-center
+            "
+          >
+            1
+          </li>
+          <li
+            class="
+              mx-1
+              pagination_page_number_padding
+              text-sm
+              cursor-pointer
+              rounded-full
+              cursor-pointer
+              pagination_inactive_number
+              text-center text_darkGray
+            "
+          >
+            2
+          </li>
+          <li
+            class="
+              pagination_page_number_padding
+              text-sm
+              cursor-pointer
+              rounded-full
+              cursor-pointer
+              pagination_inactive_number
+              text-center text_darkGray
+            "
+          >
+            3
+          </li>
+          <li class="px-2 cursor-pointer pagination_arrow_color">></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
