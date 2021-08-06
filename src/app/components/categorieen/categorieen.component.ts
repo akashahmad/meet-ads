@@ -46,16 +46,15 @@ export class CategorieenComponent implements OnInit {
     this.popup = true;
   }
   onItemClick(id: any) {
-    // this.itemId = id;
-    this.showCloseId = id;
-    // if (this.itemId !== 0 && this.showCloseId === id && this.showPopup ) {
-    //   this.showPopup = false;
-    //   this.itemId = 0;
-    //   console.log('name', this.showPopup);
-    //   console.log('this.itemId', this.itemId);
-    // } else 
-    if (this.showPopup === false) {
+    if (this.HEROES.find((single) => single.id === id) && this.showCloseId !== id) {
+      this.showCloseId = id;
       this.showPopup = true;
+    } else if (
+      this.HEROES.find((single) => single.id === id) &&
+      this.showCloseId === id
+    ) {
+      this.showCloseId = 0;
+      this.showPopup = false;
     }
   }
 }

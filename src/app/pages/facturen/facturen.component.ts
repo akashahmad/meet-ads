@@ -3,11 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-facturen',
   templateUrl: './facturen.component.html',
-  styleUrls: ['./facturen.component.css']
+  styleUrls: ['./facturen.component.css'],
 })
 export class FacturenComponent implements OnInit {
   popup: boolean = false;
-  constructor() { }
+  constructor() {}
   HEROES = [
     {
       id: 1,
@@ -109,11 +109,15 @@ export class FacturenComponent implements OnInit {
   }
   currentItem = 'Facturen';
   onItemClick(id: any) {
-    this.itemId = id;
-    if (this.itemId === id && this.showPopup === true) {
-      this.showPopup = false;
-    } else if (this.itemId === id && this.showPopup === false) {
+    if (this.HEROES.find((single) => single.id === id) && this.itemId !== id) {
+      this.itemId = id;
       this.showPopup = true;
+    } else if (
+      this.HEROES.find((single) => single.id === id) &&
+      this.itemId === id
+    ) {
+      this.itemId = 0;
+      this.showPopup = false;
     }
   }
   className = 'false';

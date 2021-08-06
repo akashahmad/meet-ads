@@ -94,11 +94,15 @@ export class BestellingenComponent implements OnInit {
   ngOnInit(): void {}
   currentItem = 'Bestellingen ';
   onItemClick(id: any) {
-    this.itemId = id;
-    if (this.itemId === id && this.showPopup === true) {
-      this.showPopup = false;
-    } else if (this.itemId === id && this.showPopup === false) {
+    if (this.HEROES.find((single) => single.id === id) && this.itemId !== id) {
+      this.itemId = id;
       this.showPopup = true;
+    } else if (
+      this.HEROES.find((single) => single.id === id) &&
+      this.itemId === id
+    ) {
+      this.itemId = 0;
+      this.showPopup = false;
     }
   }
   className = 'false';
