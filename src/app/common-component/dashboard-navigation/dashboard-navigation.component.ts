@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, Output } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Location } from '@angular/common';
+// import { Subject } from 'rxjs/Subject';
 
 @Component({
   selector: 'app-dashboard-navigation',
@@ -12,6 +13,5 @@ export class DashboardNavigationComponent implements OnInit {
   constructor(private Location: Location) {
     this.activeRoute = this.Location.path();
   }
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 }

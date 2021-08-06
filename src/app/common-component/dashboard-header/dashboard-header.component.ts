@@ -12,6 +12,7 @@ export class DashboardHeaderComponent implements OnInit {
   constructor(private Location: Location) {
     this.activeRoute = this.Location.path();
   }
+  logoutPopup = "false";
   ngOnInit(): void {}
   @Input() item = '';
   @Output() newItemEvent = new EventEmitter<string>();
@@ -20,6 +21,13 @@ export class DashboardHeaderComponent implements OnInit {
   }
   openNav() {
     this.mySidenav = true;
+  }
+  logoutModal() {
+    if (this.logoutPopup === "true") {
+      this.logoutPopup = "false";
+    } else {
+      this.logoutPopup = "true";
+    }
   }
   drawer: Boolean = true;
   showHide() {

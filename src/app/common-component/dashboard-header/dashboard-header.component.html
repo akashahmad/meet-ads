@@ -14,9 +14,7 @@
   <!-- left side -->
   <div class="w-6/12 flex">
     <button (click)="showHide()" class="pr-3">
-      <span class="text-2xl text-white cursor-pointer"
-      >&#9776;</span
-    >
+      <span class="text-2xl text-white cursor-pointer">&#9776;</span>
     </button>
     <h4 class="text-white text-2xl font-bold flex">
       <!-- Bestellingen -->
@@ -52,7 +50,9 @@
           text_darkblue
           items-center
           font-medium
+          cursor-pointer
         "
+        (click)="logoutModal()"
       >
         <li class="px-1">
           <img
@@ -149,5 +149,23 @@
         Transactie</a
       >
     </div>
+  </div>
+</div>
+<div
+  class="
+    absolute
+    mx-6
+    logout_popup
+    right-0
+    rounded-lg
+    px-5
+    py-2
+    bg_component_color2
+    shadow-lg
+  "
+  [ngClass]="logoutPopup === 'true' ? 'block' : 'hidden'"
+>
+  <div>
+    <h5 class="text-white">Logout</h5>
   </div>
 </div>
