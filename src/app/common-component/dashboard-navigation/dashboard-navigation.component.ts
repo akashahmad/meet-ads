@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Location } from '@angular/common';
-// import { Subject } from 'rxjs/Subject';
 
 @Component({
   selector: 'app-dashboard-navigation',

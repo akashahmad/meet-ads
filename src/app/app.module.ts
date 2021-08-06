@@ -34,6 +34,7 @@ import { CategorieenComponent } from './components/categorieen/categorieen.compo
 import { TransactieComponent } from './pages/transactie/transactie.component';
 import { VerzendkostenComponent } from './components/verzendkosten/verzendkosten.component';
 import { NederlandComponent } from './components/nederland/nederland.component';
+import { ClickOutsideModule } from 'ng-click-outside';
 
 @NgModule({
   declarations: [
@@ -73,6 +74,7 @@ import { NederlandComponent } from './components/nederland/nederland.component';
     AppRoutingModule,
     IvyCarouselModule,
     AngularTypewriterEffectModule,
+    ClickOutsideModule
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -10,6 +10,7 @@
     px-6
     dashboard_header_container
   "
+  (clickOutside)="onClickedOutside($event)"
 >
   <!-- left side -->
   <div class="w-6/12 flex">
@@ -148,6 +149,12 @@
       >
         Transactie</a
       >
+      <a
+        routerLink="/"
+        [ngClass]="activeRoute === '/' ? ' text_yellow' : ' text-white'"
+      >
+        Transactie</a
+      >
     </div>
   </div>
 </div>
@@ -162,10 +169,11 @@
     py-2
     bg_component_color2
     shadow-lg
+    cursor-pointer
   "
   [ngClass]="logoutPopup === 'true' ? 'block' : 'hidden'"
 >
-  <div>
+  <div routerLink="/" class="    cursor-pointer">
     <h5 class="text-white">Logout</h5>
   </div>
 </div>
