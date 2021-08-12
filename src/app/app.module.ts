@@ -35,6 +35,8 @@ import { TransactieComponent } from './pages/transactie/transactie.component';
 import { VerzendkostenComponent } from './components/verzendkosten/verzendkosten.component';
 import { NederlandComponent } from './components/nederland/nederland.component';
 import { ClickOutsideModule } from 'ng-click-outside';
+import { Facturen2Component } from './pages/facturen2/facturen2.component';
+import { AfbeeldingenComponent } from './components/afbeeldingen/afbeeldingen.component';
 
 @NgModule({
   declarations: [
@@ -68,6 +70,8 @@ import { ClickOutsideModule } from 'ng-click-outside';
     TransactieComponent,
     VerzendkostenComponent,
     NederlandComponent,
+    Facturen2Component,
+    AfbeeldingenComponent,
   ],
   imports: [
     BrowserModule,

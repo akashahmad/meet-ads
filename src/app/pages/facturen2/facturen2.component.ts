@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-transactie',
-  templateUrl: './transactie.component.html',
-  styleUrls: ['./transactie.component.css'],
+  selector: 'app-facturen2',
+  templateUrl: './facturen2.component.html',
+  styleUrls: ['./facturen2.component.css']
 })
-export class TransactieComponent implements OnInit {
-  constructor() {}
+export class Facturen2Component implements OnInit {
 
-  ngOnInit(): void {}
-  currentItem = 'Transactie';
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  currentItem = 'Facturen';
   className = 'false';
   popup = false;
   HEROES = [
@@ -53,4 +55,5 @@ export class TransactieComponent implements OnInit {
   openNav() {
     this.popup = true;
   }
+
 }
