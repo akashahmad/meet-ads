@@ -37,6 +37,7 @@ import { NederlandComponent } from './components/nederland/nederland.component';
 import { ClickOutsideModule } from 'ng-click-outside';
 import { Facturen2Component } from './pages/facturen2/facturen2.component';
 import { AfbeeldingenComponent } from './components/afbeeldingen/afbeeldingen.component';
+import { AdvertentieesAlgemeenComponent } from './components/advertentiees-algemeen/advertentiees-algemeen.component';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { AfbeeldingenComponent } from './components/afbeeldingen/afbeeldingen.co
     NederlandComponent,
     Facturen2Component,
     AfbeeldingenComponent,
+    AdvertentieesAlgemeenComponent,
   ],
   imports: [
     BrowserModule,

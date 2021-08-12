@@ -680,7 +680,29 @@
       <input
         class="common_form_input w-full px-5 py-3"
         placeholder="Zoek advertentie"
+        [value]="getName"
+        (keyup)="handleEvent($any($event).target.value)"
       />
+      <div class="w-full py-2 px-1" *ngIf="showFilterPopup">
+        <div
+          class="
+            common_form_input
+            w-full
+            filter_records
+            lg:w-3/12
+            xl:w-3/12
+            absolute
+            z-10
+          "
+        >
+          <div *ngFor="let single of states.allRecord; let i = index">
+            <p class="text-white text-base py-2 px-5" (click)="getUserName(single.name)">
+              {{ single ? single.name : "" }}
+            </p>
+            <div class="modal_hr_line2"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
