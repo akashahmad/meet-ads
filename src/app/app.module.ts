@@ -38,6 +38,10 @@ import { ClickOutsideModule } from 'ng-click-outside';
 import { Facturen2Component } from './pages/facturen2/facturen2.component';
 import { AfbeeldingenComponent } from './components/afbeeldingen/afbeeldingen.component';
 import { AdvertentieesAlgemeenComponent } from './components/advertentiees-algemeen/advertentiees-algemeen.component';
+import { CreateAccountComponent } from './pages/create-account/create-account.component';
+import { LoginHeaderComponent } from './common-component/login-header/login-header.component';
+import { LoginFaqComponent } from './common-component/login-faq/login-faq.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 
 @NgModule({
   declarations: [
@@ -74,6 +78,10 @@ import { AdvertentieesAlgemeenComponent } from './components/advertentiees-algem
     Facturen2Component,
     AfbeeldingenComponent,
     AdvertentieesAlgemeenComponent,
+    CreateAccountComponent,
+    LoginHeaderComponent,
+    LoginFaqComponent,
+    ForgotPasswordComponent,
   ],
   imports: [
     BrowserModule,

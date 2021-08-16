@@ -20,6 +20,9 @@
 .bg_yellow:hover {
   background-color: #d6b81f;
 }
+.bg_white {
+  background: white;
+}
 /* border */
 .br_yellow {
   border: 1px solid #e4c218;
@@ -54,6 +57,12 @@
 .text_yellow {
   color: #e4c218 !important;
 }
+.text_yellow2 {
+  color: #e4c218 !important;
+}
+.text_yellow2:hover {
+  color: #ccaf1e !important;
+}
 .text_darkGray {
   color: #8b8b8b;
 }
@@ -77,4 +86,7 @@
 .pagination_inactive_number:hover{
   color: #000;
   background-color: #e4c218;  
+}
+.login_bg_color{
+  background: #212e37;
 }

@@ -1,81 +1,30 @@
 <app-header></app-header>
-<div class="home_container px-0">
+<div class="home_container">
   <!-- section1 -->
-  <div class="bg_gray1 py-5 px-3">
-    <div
-      class="
-        container
-        mx-auto
-        flex flex-col
-        lg:flex-row
-        xl:flex-row
-        justify-around
-        py-12
-      "
-    >
+  <div class="bg_gray1 section1_container">
+    <div class="container_auto left_right_content_container">
       <!-- left side  -->
-      <div class="w-full lg:w-5/12 xl:w-5/12">
+      <div class="left_side_sect1">
         <!-- <title -->
         <div>
-          <div class="w-full">
-            <h3
-              data-aos="fade-up"
-              class="
-                line_height_50
-                text-4xl text_darkblue2
-                font-bold
-                text-center
-                lg:text-left
-                xl:text-left
-              "
-            >
+          <div class="w_100per">
+            <h3 data-aos="fade-down" class="line_height_50 text_darkblue2">
               <ngtypewriter [StringList]="list" [speed]="3000"></ngtypewriter>
             </h3>
             <p
               data-aos="fade-up"
-              class="
-                text-sm text_darkblue2
-                opacity_8
-                py-6
-                text-center
-                lg:text-left
-                xl:text-left
-                line_height_28
-              "
+              class="text_darkblue2 opacity_8 line_height_28"
             >
               Lorem ipsum dolor sit amet, consectetur adipis cing elit. nunc non
               risus condiment lobortis eni m at, ef sollicitudin risus. morbi
               dsfg nunc non risus condimen. r adipis cing elit. nunc nonarehhsh
             </p>
-            <div
-              class="flex justify-center lg:justify-start xl:justify-start py-6"
-              data-aos="fade-up"
-            >
-              <button
-                class="
-                  border-2 border-gray-400
-                  hover:border hover:bg-gray-200
-                  cursor-pointer
-                  rounded
-                  px-5
-                  py-2
-                "
-              >
+            <div class="button_container py-6" data-aos="fade-up">
+              <button class="common_grayButton cursor_pointer">
                 Get Started
               </button>
-              <button
-                class="
-                  hover:border-2 hover:border-gray-500 hover:bg-gray-200
-                  cursor-pointer
-                  rounded
-                  px-5
-                  py-2
-                  mx-3
-                  flex
-                  items-center
-                "
-              >
-                <span class="px-2">watch Video</span>
+              <button class="cursor_pointer btn2">
+                <span>watch Video</span>
                 <img
                   src="../../../assets/images/Group39886@3x.png"
                   class="h_22px"
@@ -83,7 +32,7 @@
                 />
               </button>
             </div>
-            <div class="pt-12" data-aos="fade-up">
+            <div class="logos_img_container" data-aos="fade-up">
               <img
                 src="../../../assets/images/Group39757@3x.png"
                 alt=""
@@ -94,7 +43,7 @@
         </div>
       </div>
       <!-- right side -->
-      <div class="w-full lg:w-4/12 xl:w-4/12">
+      <div class="right_side_sec1">
         <img
           data-aos="fade-down"
           src="../../../assets/images/Group39884@3x.png"
@@ -105,16 +54,16 @@
     </div>
   </div>
   <!-- section2 -->
-  <div class="bg-white py-5 px-3">
-    <div class="container mx-auto">
+  <div class="bg_white section2_home">
+    <div class="container_auto">
       <!-- title -->
-      <div class="flex flex-col items-center py-3">
-        <h3 class="pt-3 font-bold text-center text-3xl" data-aos="fade-down">
+      <div class="d_flex flex_column items_center title_container">
+        <h3 class="font_bold text_center f_35" data-aos="fade-down">
           Specialties
         </h3>
-        <div class="w-full lg:w-9/12 xl:w-9/12">
+        <div class="paragraph_container">
           <p
-            class="py-5 text-center text-base text_darkblue2"
+            class=" text_center text_darkblue2"
             data-aos="fade-down"
           >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -127,77 +76,71 @@
       <!-- content -->
       <div
         class="
-          flex
-          justify-center
-          xl:justify-around
-          lg:justify-around
+          box_container
           flex-wrap
-          w-full
-          pt-12
-          pb-8
         "
         data-aos="fade-up"
       >
         <!-- box1 -->
-        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5">
-          <div class="w-full py-5 px-2 cursor-pointer">
+        <div class="single_box">
+          <div class="w_100per img_content_container cursor_pointer">
             <!-- img -->
-            <div class="flex justify-start py-2">
+            <div class="d_flex justify_start img_container">
               <img
                 src="../../../assets/images/Group39887@3x.png"
                 alt=""
                 class="h_80px"
               />
             </div>
-            <div>
-              <h4 class="text-left text-lg font-bold py-4">Parts management</h4>
-              <div class="flex items-center py-1">
+            <div class="title_arrwImg_content">
+              <h4>Parts management</h4>
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Easily manage your stock
                 </p>
               </div>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Match with car types
                 </p>
               </div>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Sell via Marktplaats and eBay
                 </p>
               </div>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Sell via your own site
                 </p>
               </div>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Import your current stock
                 </p>
               </div>
@@ -205,18 +148,18 @@
           </div>
         </div>
         <!-- box2 -->
-        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5">
-          <div class="w-full py-5 px-2 cursor-pointer">
+        <div class="single_box">
+          <div class="w_100per img_content_container cursor_pointer">
             <!-- img -->
-            <div class="flex justify-start py-2">
+            <div class="d_flex items_center img_content">
               <img
                 src="../../../assets/images/Group39888@3x.png"
                 alt=""
                 class="h_80px"
               />
             </div>
-            <div>
-              <h4 class="text-left text-lg font-bold py-4">
+            <div class="title_arrwImg_content">
+              <h4>
                 Vehicle management
               </h4>
               <div class="flex items-center py-1">
@@ -225,47 +168,47 @@
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Easily manage your stock
                 </p>
               </div>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Match with car types
                 </p>
               </div>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Sell via Marktplaats and eBay
                 </p>
               </div>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Sell via your own site
                 </p>
               </div>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Import your current stock
                 </p>
               </div>
@@ -273,37 +216,37 @@
           </div>
         </div>
         <!-- box3 -->
-        <div class="w-10/12 lg:w-3/12 xl:w-3/12 px-5 px-lg-2 px-xl-2">
-          <div class="w-full py-5 px-2 cursor-pointer">
+        <div class="single_box">
+          <div class="w_100per img_content_container cursor_pointer">
             <!-- img -->
-            <div class="flex justify-start py-2">
+            <div class="d_flex items_center img_content">
               <img
                 src="../../../assets/images/Group39889@3x.png"
                 alt=""
                 class="h_80px"
               />
             </div>
-            <div>
-              <h4 class="text-left text-lg font-bold py-4">
+            <div class="title_arrwImg_content">
+              <h4>
                 Website / webshop
               </h4>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Easily manage your stock
                 </p>
               </div>
-              <div class="flex items-center py-1">
+              <div class="d_flex items_center img_content">
                 <img
                   src="../../../assets/images/Path83040@3x.png"
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Match with car types
                 </p>
               </div>
@@ -313,7 +256,7 @@
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Sell via Marktplaats and eBay
                 </p>
               </div>
@@ -323,7 +266,7 @@
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Sell via your own site
                 </p>
               </div>
@@ -333,7 +276,7 @@
                   class="h_14px"
                   alt=""
                 />
-                <p class="text-center text_darkblue2 text-sm px-2">
+                <p class="text_center text_darkblue2 fs_13">
                   Import your current stock
                 </p>
               </div>
@@ -344,15 +287,15 @@
     </div>
   </div>
   <!-- section3 -->
-  <div class="bg_gray1 py-10 px-3 home_section3_container">
-    <div class="container mx-auto">
+  <div class="bg_gray1 home_section3_container">
+    <div class="container_auto">
       <!-- title -->
-      <div class="flex flex-col items-center py-3">
+      <div class="d_flex flex_column items_center py-3">
         <h3 class="pt-3 font-bold text-center text-3xl" data-aos="fade-up">
           Benefits
         </h3>
-        <div class="w-full lg:w-9/12 xl:w-9/12" data-aos="fade-up">
-          <p class="py-5 text-center text_darkblue2">
+        <div class="content_container" data-aos="fade-up">
+          <p class="text_center text_darkblue2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -362,21 +305,13 @@
       </div>
       <!-- content -->
       <div
-        class="flex flex-col lg:flex-row xl:flex-row justify-center py-8"
+        class="images_container"
         data-aos="fade-left"
       >
         <!-- left side -->
         <div
           class="
-            w-full
-            flex
-            justify-center
-            lg:w-5/12
-            xl:w-5/12
-            py-2
-            px-2
-            lg:px-4
-            xl:px-4
+          single_image_container
           "
         >
           <div>
@@ -390,15 +325,7 @@
         <!-- right side -->
         <div
           class="
-            w-full
-            flex
-            justify-center
-            lg:w-5/12
-            xl:w-5/12
-            py-2
-            px-2
-            lg:px-4
-            xl:px-4
+          single_image_container
           "
         >
           <div>
@@ -410,7 +337,7 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-center pt-3">
+      <div class="d_flex justify_center logo_image_container">
         <div
           class="
             bg_darkblue
@@ -435,8 +362,8 @@
     </div>
   </div>
   <!-- section 4 -->
-  <div class="bg_white py-12 px-3 section4_home">
-    <div class="container mx-auto">
+  <div class="bg_white section4_home">
+    <div class="container_auto">
       <!-- title -->
       <div class="flex flex-col items-center py-3">
         <h3 class="pt-6 font-bold text-center text-3xl" data-aos="fade-up">

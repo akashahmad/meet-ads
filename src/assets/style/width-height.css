@@ -79,6 +79,9 @@
 .w_95per {
   width: 95%;
 }
+.w_100per{
+  width: 100%!important;
+}
 
 .w_fit_content {
   width: fit-content !important;

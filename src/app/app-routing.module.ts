@@ -14,6 +14,8 @@ import { FacturenComponent } from './pages/facturen/facturen.component';
 import { WebshopComponent } from './pages/webshop/webshop.component';
 import { TransactieComponent } from './pages/transactie/transactie.component';
 import { Facturen2Component } from './pages/facturen2/facturen2.component';
+import { CreateAccountComponent } from './pages/create-account/create-account.component';
+import { ForgotPasswordComponent } from './pages/forgot-password/forgot-password.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -30,6 +32,8 @@ const routes: Routes = [
   { path: 'webshop', component: WebshopComponent },
   { path: 'transactie', component: TransactieComponent },
   { path: 'facturen2', component: Facturen2Component },
+  { path: 'login', component: CreateAccountComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
 ];
 
 @NgModule({

@@ -1,71 +1,48 @@
-<div class="header_container bg_gray1">
-  <div
-    class="w-full flex justify-between items-center container mx-auto py-3 px-2"
-  >
+<div class="landing_pageHeader_container bg_gray1">
+  <div class="logo_links_container container_auto">
     <!-- left side -->
-    <div class="w-3/12">
+    <div class="left_side">
       <img src="../../../assets/images/logo2.png" alt="logo" class="h_80px" />
     </div>
     <!-- right side -->
-    <div class="w-6/12 right_side_container">
-      <div class="hidden lg:block xl:block">
+    <div class="right_side_container">
+      <div class="show_hide">
         <ul
           class="
-            flex
-            justify-between
-            w-full
-            list-none
+            d_flex
+            justify_between
+            list_none
             text_darkblue
-            items-center
-            font-medium
+            items_center
+            font_medium
           "
         >
-          <li class="cursor-pointer hover:text-yellow-400 px-1">
+          <li class="cursor_pointer">
             <a
               [routerLink]="['/']"
-              routerLinkActive="text-yellow-400"
+              routerLinkActive="text_yellow2"
               [routerLinkActiveOptions]="{ exact: true }"
               >Home</a
             >
           </li>
-          <li class="cursor-pointer hover:text-yellow-400 px-1">
-            <a routerLink="/services" routerLinkActive="text-yellow-400"
+          <li class="cursor_pointer">
+            <a routerLink="/services" routerLinkActive="text_yellow2"
               >Services</a
             >
           </li>
-          <li class="cursor-pointer hover:text-yellow-400 px-1">
-            <a routerLink="/pricing" routerLinkActive="text-yellow-400"
-              >Pricing</a
-            >
+          <li class="cursor-pointer">
+            <a routerLink="/pricing" routerLinkActive="text_yellow2">Pricing</a>
           </li>
-          <li class="cursor-pointer hover:text-yellow-400 px-1">About us</li>
-          <ul class="list-none flex items-center">
-            <li class="px-1">
-              <button
-                class="
-                  border-2 border-gray-400
-                  hover:border hover:bg-gray-200
-                  cursor-pointer
-                  rounded
-                  px-3
-                  py-2
-                "
-              >
+          <li class="cursor_pointer">About us</li>
+          <ul class="list_none d_flex items_center">
+            <li class="button_container">
+              <button class="btn1 cursor_pointer" routerLink="/login">
                 Platform Login
               </button>
             </li>
-            <li class="px-1">
+            <li class="button_container">
               <button
-                class="
-                  border-2 border-black
-                  bg_darkblue
-                  rounded
-                  cursor-pointer
-                  text-yellow-400
-                  px-3
-                  py-2
-                  h-full
-                "
+                class="btn2 bg_darkblue cursor_pointer"
                 routerLink="/dashboard"
               >
                 Get Started
@@ -74,11 +51,9 @@
           </ul>
         </ul>
       </div>
-      <div class="block lg:hidden xl:hidden">
-        <div class="w-full flex justify-end px-2">
-          <span style="font-size: 30px; cursor: pointer" (click)="openNav()"
-            >&#9776;</span
-          >
+      <div class="smScreen_show">
+        <div class="w_100per d_flex justify_end hamburger">
+          <span (click)="openNav()">&#9776;</span>
         </div>
       </div>
     </div>
@@ -93,7 +68,7 @@
       <a routerLink="/services">Services</a>
       <a routerLink="/pricing">Pricing</a>
       <a>About Us</a>
-      <a>Platform Login</a>
+      <a routerLink="/login">Platform Login</a>
       <a routerLink="/dashboard">Get Started</a>
     </div>
   </div>
