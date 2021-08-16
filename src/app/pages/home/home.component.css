@@ -408,7 +408,268 @@
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
+.home_container
+  .section6_container
+  .box_container
+  .first_box_container
+  .single_box
+  p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.home_container
+  .section6_container
+  .box_container
+  .first_box_container
+  .single_box
+  h4 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.home_container
+  .section6_container
+  .box_container
+  .first_box_container
+  .single_box
+  span {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.home_container
+  .section6_container
+  .box_container
+  .first_box_container
+  .single_box
+  .list_container {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.home_container
+  .section6_container
+  .box_container
+  .first_box_container
+  .single_box
+  .list_container
+  .single_item {
+  --tw-border-opacity: 1;
+  border-color: rgba(229, 231, 235, var(--tw-border-opacity));
+  border-top-width: 1px;
+  align-items: center;
+  display: flex;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+.home_container
+  .section6_container
+  .box_container
+  .first_box_container
+  .single_box
+  .list_container
+  .single_item
+  p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: left;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.home_container
+  .section6_container
+  .box_container
+  .first_box_container
+  .single_box
+  .bottom_button {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #fbbf24;
+}
+.home_container .section6_container .box_container .second_box_container {
+  width: 33.333333%;
+}
+.home_container
+  .section6_container
+  .box_container
+  .second_box_container
+  .box_second {
+  width: 75%;
+  background-color: #fbbf24;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.home_container
+  .section6_container
+  .box_container
+  .second_box_container
+  .box_second
+  h4 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  text-align: center;
+  padding-bottom: 0.75rem;
+  padding-top: 2rem;
+}
+.home_container
+  .section6_container
+  .box_container
+  .second_box_container
+  .box_second
+  .paragraph1 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #16242d;
+}
+.home_container
+  .section6_container
+  .box_container
+  .second_box_container
+  .box_second
+  .paragraph2 {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.home_container
+  .section6_container
+  .box_container
+  .second_box_container
+  .box_second
+  .paragraph3_container {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.25rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+.home_container
+  .section6_container
+  .box_container
+  .second_box_container
+  .box_second
+  .paragraph_button_container {
+  padding-top: 1rem;
+}
+.home_container
+  .section6_container
+  .box_container
+  .second_box_container
+  .box_second
+  .paragraph_button_container
+  p {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin: 0px;
+}
+
+.home_container
+  .section6_container
+  .box_container
+  .second_box_container
+  .box_second
+  .paragraph3_container:hover {
+  background-color: #fbbf24;
+}
+.home_container .section7 .main_title h4 {
+  font-weight: 700;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.home_container .section7 .main_title .testimonial_box .carousel-cell {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+.home_container .section7 .stars_image_container img {
+  width: auto !important;
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  margin-top: 5px !important;
+  margin-bottom: 5px !important;
+}
+.home_container
+  .section7
+  .testimonial_box
+  .carousel-cell
+  .description_container {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.home_container
+  .section7
+  .testimonial_box
+  .carousel-cell
+  .common_box
+  .profile_content_container {
+  padding-bottom: 1.25rem;
+  padding-top: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+}
+.home_container
+  .section7
+  .testimonial_box
+  .carousel-cell
+  .common_box
+  .profile_content_container
+  .profile_img {
+  width: 25%;
+}
+.home_container
+  .section7
+  .testimonial_box
+  .carousel-cell
+  .common_box
+  .profile_content_container
+  .profile_name_container {
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+}
+
 @media (max-width: 1024px) and (min-width: 320px) {
+  .home_container
+    .section6_container
+    .box_container
+    .second_box_container
+    .box_second {
+    width: 100%;
+  }
+  .home_container .section6_container .box_container .second_box_container {
+    width: 100%;
+  }
   .home_container .section6_container .box_container .first_box_container {
     width: 100%;
   }
