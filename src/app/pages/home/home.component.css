@@ -617,9 +617,9 @@
   padding-top: 5px !important;
   padding-bottom: 5px !important;
 }
-/* .home_container .section7 .stars_image_container img {
+.home_container .section7 .stars_image_container img {
   width: auto !important;;
-} */
+}
 .home_container
   .section7
   .testimonial_box
@@ -826,11 +826,16 @@
 }
 .home_container .section7 .testimonial_box .common_box {
   transition: transform 0.2s;
+  padding: 5px 0px 0px 0px;
 }
 .home_container .section7 .testimonial_box .common_box:hover {
   -ms-transform: scale(1.1); /* IE 9 */
   -webkit-transform: scale(1.1); /* Safari 3-8 */
   transform: scale(1.1);
+  /* box-shadow: 0 50px 99px 0 rgba(31, 72, 93, 0.1);
+  background-color: #fff; */
+  background-color: white;
+  box-shadow: 0 10px 53px 0 rgba(0, 0, 0, 0.25);
 }
 .home_container .section7 .testimonial_box .common_box:hover .bottom_br {
   height: 4px;

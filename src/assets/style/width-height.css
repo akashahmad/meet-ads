@@ -31,6 +31,9 @@
 .h_25px {
   height: 25px;
 }
+.h_27px {
+  height: 27px;
+}
 .h_30px {
   height: 30px;
 }
@@ -62,6 +65,9 @@
 .h_fit_content {
   height: fit-content;
 }
+.min_100vh {
+  min-height: 100vh;
+}
 
 /* percent */
 .w_5per {
@@ -79,10 +85,9 @@
 .w_95per {
   width: 95%;
 }
-.w_100per{
-  width: 100%!important;
+.w_100per {
+  width: 100% !important;
 }
-
 .w_fit_content {
   width: fit-content !important;
 }
