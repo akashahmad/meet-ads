@@ -610,13 +610,16 @@
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
-.home_container .section7 .stars_image_container img {
+.home_container .section7 .stars_image_container {
   width: auto !important;
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
-  margin-top: 5px !important;
-  margin-bottom: 5px !important;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
+/* .home_container .section7 .stars_image_container img {
+  width: auto !important;;
+} */
 .home_container
   .section7
   .testimonial_box
